@@ -43,7 +43,7 @@ export default function AboutUs() {
             ))}
           </ul>
           <a
-            href="#contact"
+            href="/contact"
             className="mt-2 group inline-flex items-center justify-center px-8 py-3 rounded-full bg-gradient-to-r from-amber-500 to-yellow-400 shadow-lg text-white text-lg font-extrabold transition-transform hover:scale-105 hover:from-amber-600 hover:to-yellow-500 focus:outline-none focus:ring-2 focus:ring-amber-300"
           >
             Bizimle İletişime Geç
