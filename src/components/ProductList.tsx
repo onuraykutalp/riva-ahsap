@@ -4,14 +4,14 @@ import { motion, AnimatePresence } from "framer-motion";
 
 // Minimal ürün görselleri (örnek adlandırılmış, değiştirebilirsiniz)
 const products = [
-  { id: 1, name: "Ahşap Camii Ünitesi", image: "/products/product-1.jpg" },
-  { id: 2, name: "Ahşap Balkon Kenarlığı", image: "/products/product-2.jpg" },
-  { id: 3, name: "Ahşap Kapı", image: "/products/product-3.jpg" },
+  { id: 1, name: "Ahşap Mihrap", image: "/products/product-1.jpg" },
+  { id: 2, name: "Korkuluk", image: "/products/product-2.jpg" },
+  { id: 3, name: "Çıtakari Tavan", image: "/products/product-3.jpg" },
   { id: 4, name: "Ahşap Tavanlık", image: "/products/product-4.jpg" },
-  { id: 5, name: "Ahşap Camii Kapısı", image: "/products/product-5.jpg" },
+  { id: 5, name: "Ahşap Kapı", image: "/products/product-5.jpg" },
   { id: 6, name: "Ahşap Kapı", image: "/products/product-6.jpg" },
   { id: 7, name: "Ahşap Kapı", image: "/products/product-7.jpg" },
-  { id: 8, name: "Ahşap Camii Ünitesi", image: "/products/product-8.jpg" },
+  { id: 8, name: "Ahşap Kürsü", image: "/products/product-8.jpg" },
 ];
 
 const shimmer =
@@ -24,7 +24,7 @@ export default function ProductList() {
   const hasNext = selectedIdx !== null && selectedIdx < products.length - 1;
 
   return (
-    <section className="w-full py-12 px-2 sm:px-10 bg-gradient-to-br from-amber-50 via-yellow-50 to-amber-100">
+    <section className="w-full py-12 px-2 sm:px-10 bg-gradient-to-tr from-amber-50 via-yellow-50 to-amber-100">
       <h2 className="text-3xl sm:text-4xl font-extrabold mb-7 text-center bg-gradient-to-r from-amber-800 via-yellow-600 to-amber-400 bg-clip-text text-transparent drop-shadow-md tracking-tight">
         Ürünlerimizden Seçmeler
       </h2>

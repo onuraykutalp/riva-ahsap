@@ -12,6 +12,9 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "Riva Ahşap",
   description: "Riva Ahşap, doğanın estetiğini, modern tasarım anlayışıyla buluşturuyoruz. Yüksek kaliteli malzemeler ve usta işçilikle, her yaşam alanı için özgün ve işlevsel ahşap çözümleri sunuyoruz.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
