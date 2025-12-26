@@ -20,7 +20,11 @@ const slides = [
   },
 ];
 
-export default function Slider() {
+interface SliderProps {
+  useH1?: boolean;
+}
+
+export default function Slider({ useH1 = false }: SliderProps) {
   const [current, setCurrent] = useState(0);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -130,14 +134,25 @@ export default function Slider() {
             transform: "translateX(-50%)",
           }}
         >
-          <h2
-            className="text-xl xs:text-lg sm:text-3xl md:text-4xl font-black text-amber-800 tracking-tight text-center drop-shadow-sm leading-tight mb-2"
-            style={{
-              letterSpacing: "-.02em",
-            }}
-          >
-            {slides[current].title}
-          </h2>
+          {useH1 ? (
+            <h1
+              className="text-xl xs:text-lg sm:text-3xl md:text-4xl font-black text-amber-800 tracking-tight text-center drop-shadow-sm leading-tight mb-2"
+              style={{
+                letterSpacing: "-.02em",
+              }}
+            >
+              {slides[current].title}
+            </h1>
+          ) : (
+            <h2
+              className="text-xl xs:text-lg sm:text-3xl md:text-4xl font-black text-amber-800 tracking-tight text-center drop-shadow-sm leading-tight mb-2"
+              style={{
+                letterSpacing: "-.02em",
+              }}
+            >
+              {slides[current].title}
+            </h2>
+          )}
           <p className="text-sm xs:text-xs sm:text-base md:text-lg text-zinc-800/85 font-medium text-center max-w-lg mb-2 sm:mb-3">
             {slides[current].desc}
           </p>
