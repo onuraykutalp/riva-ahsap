@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     default: "Riva Ahşap | Ahşap İşleme ve Mobilya",
     template: "%s | Riva Ahşap",
   },
-  description: "Riva Ahşap, doğanın estetiğini modern tasarım anlayışıyla buluşturuyoruz. Yüksek kaliteli malzemeler ve usta işçilikle, her yaşam alanı için özgün ve işlevsel ahşap çözümleri sunuyoruz. İstanbul'da ahşap işleme, mobilya ve dekorasyon hizmetleri.",
+  description: "Riva Ahşap, doğanın estetiğini modern tasarım anlayışıyla buluşturuyoruz. Yüksek kaliteli malzemeler ve usta işçilikle, her yaşam alanı için özgün ve işlevsel ahşap çözümleri sunuyoruz. Mobilya ve dekorasyon hizmetleri.",
   keywords: [
     "ahşap işleme",
     "ahşap mobilya",

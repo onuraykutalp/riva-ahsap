@@ -7,7 +7,7 @@ import StuffList from "@/components/StuffList";
 
 export const metadata: Metadata = {
   title: "Ana Sayfa",
-  description: "Riva Ahşap - İstanbul'da ahşap işleme, mobilya ve dekorasyon hizmetleri. Doğanın estetiğini modern tasarım anlayışıyla buluşturuyoruz. Yüksek kaliteli malzemeler ve usta işçilikle özel ahşap çözümler.",
+  description: "Riva Ahşap: Doğanın estetiğini modern tasarımla buluşturan ahşap işleme, özel mobilya ve dekorasyon hizmetleri. Uzman kadro, kaliteli malzeme ve işçilik ile özgün çözümler sunar.",
   keywords: [
     "ahşap işleme İstanbul",
     "ahşap mobilya İstanbul",
