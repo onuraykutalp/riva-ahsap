@@ -18,9 +18,9 @@ const furniture = [
   },
   {
     id: 3,
-    name: "Ahşap Sandalye",
-    image: "/products/ahsap-sandalye.jpg",
-    desc: "Ahşap sandalye, el işçiliğiyle üretilmiş dayanıklı ahşap sandalye.",
+    name: "Mutfak Dolabı",
+    image: "/products/mutfak-dolabi.jpg",
+    desc: "Ahşap mutfak dolabı, el işçiliğiyle üretilmiş dayanıklı ahşap mutfak dolabı.",
   },
   {
     id: 4,
@@ -36,9 +36,9 @@ const furniture = [
   },
   {
     id: 6,
-    name: "Oturma Ünitesi",
-    image: "/products/ahsap-oturma-unitesi.jpg",
-    desc: "Ahşap oturma ünitesi, el işçiliğiyle üretilmiş dayanıklı ahşap oturma ünitesi.",
+    name: "Televizyon Ünitesi",
+    image: "/products/televizyon-unitesi.jpg",
+    desc: "Ahşap televizyon ünitesi, el işçiliğiyle üretilmiş dayanıklı ahşap televizyon ünitesi.",
   },
   {
     id: 7,
@@ -51,6 +51,30 @@ const furniture = [
     name: "Raf Ünitesi",
     image: "/products/raf-unitesi.jpg",
     desc: "Ahşap raf ünitesi, el işçiliğiyle üretilmiş dayanıklı ahşap raf ünitesi.",
+  },
+  {
+    id: 9,
+    name: "Çocuk Odası",
+    image: "/products/cocuk-odasi.jpg",
+    desc: "Ahşap çocuk odası, el işçiliğiyle üretilmiş dayanıklı ahşap çocuk odası.",
+  },
+  {
+    id: 10,
+    name: "Ahşap Vestiyer",
+    image: "/products/vestiyer.jpg",
+    desc: "Ahşap vestiyer, el işçiliğiyle üretilmiş dayanıklı ahşap vestiyer.",
+  },
+  {
+    id: 11,
+    name: "Ahşap Yatak Takımı",
+    image: "/products/yatak-takimi.jpg",
+    desc: "Ahşap yatak takımı, el işçiliğiyle üretilmiş dayanıklı ahşap yatak takımı.",
+  },
+  {
+    id: 12,
+    name: "Ahşap Dolap",
+    image: "/products/dolap.jpg",
+    desc: "Ahşap dolap, el işçiliğiyle üretilmiş dayanıklı ahşap dolap.",
   },
 ];
 
@@ -85,10 +109,8 @@ export default function StuffList() {
     }
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedIdx]);
 
-  // Düzeltme: Ok butonlarının tıklama fonksiyonları kodu sadeleştirildi ve prev/next anlık değer ile güncellendi
   const goPrev = () => {
     setSelectedIdx((prev) => (prev !== null && prev > 0 ? prev - 1 : prev));
   };
@@ -134,7 +156,6 @@ export default function StuffList() {
         ))}
       </div>
 
-      {/* Modal - Ultra modern diyalog/popup */}
       <AnimatePresence>
         {selectedIdx !== null && (
           <motion.div
@@ -155,14 +176,14 @@ export default function StuffList() {
               <img
                 src={furniture[selectedIdx].image}
                 alt={furniture[selectedIdx].name}
-                className="w-full h-96 object-cover"
+                className="w-full h-[800px] object-contain"
                 draggable={false}
                 style={{ borderTopLeftRadius: 24, borderTopRightRadius: 24 }}
               />
-              <div className="flex flex-row items-center justify-between gap-4 px-7 py-6 bg-gradient-to-br from-yellow-50 via-white to-amber-100">
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-white via-yellow-100 to-amber-200 flex flex-row items-center justify-between gap-4 px-7 py-6">
                 <div>
                   <h3 className="text-xl font-extrabold text-yellow-800 mb-1">{furniture[selectedIdx].name}</h3>
-                  <p className="text-md text-amber-900">{furniture[selectedIdx].desc}</p>
+                  <p className="text-md text-yellow-800">{furniture[selectedIdx].desc}</p>
                 </div>
                 <button
                   onClick={(e) => {

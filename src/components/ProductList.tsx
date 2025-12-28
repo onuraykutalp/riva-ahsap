@@ -4,14 +4,14 @@ import { motion, AnimatePresence } from "framer-motion";
 
 // Minimal ürün görselleri (örnek adlandırılmış, değiştirebilirsiniz)
 const products = [
-  { id: 1, name: "Ahşap Mihrap", image: "/products/product-1.jpg" },
+  { id: 1, name: "Ahşap Kapı", image: "/products/product-5.jpg" },
   { id: 2, name: "Korkuluk", image: "/products/product-2.jpg" },
-  { id: 3, name: "Çıtakari Tavan", image: "/products/product-3.jpg" },
-  { id: 4, name: "Ahşap Tavanlık", image: "/products/product-4.jpg" },
-  { id: 5, name: "Ahşap Kapı", image: "/products/product-5.jpg" },
-  { id: 6, name: "Ahşap Kapı", image: "/products/product-6.jpg" },
+  { id: 3, name: "Ahşap Hutbe", image: "/products/hutbe.jpg" },
+  { id: 4, name: "Çıtakari Tavan", image: "/products/product-4.jpg" },
+  { id: 5, name: "Ahşap Kapı", image: "/products/product-8.jpg" },
+  { id: 6, name: "Ahşap Kürsü", image: "/products/ahsap-kursu.jpg" },
   { id: 7, name: "Ahşap Kapı", image: "/products/product-7.jpg" },
-  { id: 8, name: "Ahşap Kürsü", image: "/products/product-8.jpg" },
+  { id: 8, name: "Ahşap Mihrap", image: "/products/product-1.jpg" },
 ];
 
 const shimmer =
