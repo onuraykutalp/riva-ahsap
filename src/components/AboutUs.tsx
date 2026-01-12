@@ -18,10 +18,23 @@ export default function AboutUs() {
             Hakkımızda
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-zinc-800/85 font-medium mb-7 leading-relaxed">
-            <span className="font-semibold text-amber-600">Riva Ahşap</span> olarak;
-            doğanın estetiğini, modern tasarım anlayışıyla buluşturuyoruz. 
-            Yüksek kaliteli malzemeler <span className="hidden md:inline">ve</span>
-            usta işçilikle, her yaşam alanı için özgün ve işlevsel ahşap çözümleri sunuyoruz.
+            <span className="font-semibold text-amber-600">Riva Ahşap</span>, geleneksel ahşap ustalığını modern tasarım ve dijital üretim teknolojileriyle birleştirerek; estetik, dayanıklı ve özgün yaşam alanları üretmek amacıyla kurulmuştur.
+            <br /><br />
+            Atölyemizde <span className="font-semibold">3D render</span>, organik ve katı modelleme çalışmalarıyla projeleri daha üretim aşamasına geçmeden dijital ortamda tasarlıyor, ölçülendiriyor ve görselleştiriyoruz. Bu sayede müşterilerimize, ortaya çıkacak işi en net haliyle önceden sunuyor; sürprizsiz, kontrollü ve yüksek kaliteli üretim sağlıyoruz.
+            <br /><br />
+            Cami iç mekân uygulamaları başta olmak üzere; minber, mihrap, kürsü, ahşap kaplama ve özel oyma işler gibi hassas ve yüksek işçilik gerektiren projelerde tecrübeye sahibiz. Aynı zamanda villa ve konut projelerinde merdiven, korkuluk, özel ahşap detaylar ve mimariye özel çözümler üretiyoruz.
+            <br /><br />
+            Mobilya alanında ise <span className="font-semibold">lake mobilya</span>, <span className="font-semibold">mutfak dolabı</span>, <span className="font-semibold">genç odası</span>, <span className="font-semibold">özel ölçü mobilya</span> ve dekoratif ahşap uygulamalarla hem fonksiyonel hem de şık yaşam alanları tasarlıyoruz. Her projede mekânın ruhuna, kullanıcının ihtiyaçlarına ve uzun ömürlü malzeme seçimine öncelik veriyoruz.
+            <br /><br />
+            <span className="font-semibold text-amber-600">Riva Ahşap olarak;</span>
+            <br />
+            <span className="pl-4 block">Tasarımda özgünlüğü</span>
+            <span className="pl-4 block">Üretimde kaliteyi</span>
+            <span className="pl-4 block">Uygulamada titizliği</span>
+            <span className="pl-4 block">Teslimatta güveni</span>
+            <span className="block mt-1">ilke ediniyoruz.</span>
+            <br />
+            Hayal edilen her detayı, dijital ortamdan gerçeğe dönüştüren bir anlayışla çalışıyor; ahşaba değer, mekânlara karakter katıyoruz.
           </p>
           <ul className="space-y-3 md:space-y-5 mb-8 w-full">
             {[
